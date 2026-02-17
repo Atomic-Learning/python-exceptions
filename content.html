@@ -1,0 +1,61 @@
+
+<p>When Python code runs, things don't always go as planned. A user might enter invalid data, a variable might not be defined, or you might try to access an index that doesn't exist. When something goes wrong, Python raises an <strong>exception</strong>—a signal that an error occurred.</p>
+
+<h2>What is an Exception?</h2>
+
+<p>An <strong>exception</strong> is an object that signals an error during program execution. When an exception is raised, by default, Python stops executing the current code and displays an error message. This error message contains valuable information about what went wrong and where it happened.</p>
+
+<h2>Reading Error Messages</h2>
+
+<p>Let's look at an example. If you try to use a variable that hasn't been defined:</p>
+
+<py-cell>print(a)
+print("This line never runs")</py-cell>
+
+<p>You'll see an error message like:</p>
+
+<pre><code>Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+    print(a)
+NameError: name 'a' is not defined</code></pre>
+
+<p>Breaking down this error message:</p>
+<ul>
+<li><strong>Traceback:</strong> Shows the sequence of function calls leading to the error</li>
+<li><strong>File and line number:</strong> Points to exactly where the error occurred</li>
+<li><strong>The problematic line:</strong> Shows the code that caused the error</li>
+<li><strong>Exception type:</strong> The name of the exception (in this case, <code>NameError</code>)</li>
+<li><strong>Error description:</strong> A message explaining what went wrong</li>
+</ul>
+
+<h2>Common Exception Types</h2>
+
+<h3>SyntaxError</h3>
+
+<p>A <code>SyntaxError</code> occurs when Python code violates the language's syntax rules. Python detects these <em>before</em> running your code:</p>
+
+<py-cell>x = 5
+y = x +</py-cell>
+
+<h3>NameError</h2>
+
+<p>A <code>NameError</code> occurs when you try to use a variable that hasn't been defined:</p>
+
+<py-cell>print(undefined_variable)</py-cell>
+
+<h3>TypeError</h3>
+
+<p>A <code>TypeError</code> occurs when you try to perform an operation on an object of the wrong type:</p>
+
+<py-cell>print("5" + 3)</py-cell>
+
+<h2>Always Read Exception Messages</h2>
+
+<p>When you encounter an exception, <strong>read the error message carefully</strong>. It usually tells you:</p>
+<ul>
+<li>What <em>type</em> of error occurred</li>
+<li><em>Where</em> it occurred (file and line number)</li>
+<li><em>Why</em> it occurred (the description)</li>
+</ul>
+
+<p>Understanding error messages is one of the most important skills in programming. Most errors are fixable once you understand what went wrong.</p>

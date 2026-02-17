@@ -1,0 +1,24 @@
+{
+    "title": "Python: Exceptions",
+    "slug": "python-exceptions",
+    "description": "Introduction to exceptions in Python. Covers what exceptions are (error objects that signal problems during program execution), how Python reports exceptions with error messages and line numbers, how to read and interpret error messages, and common exception types like SyntaxError, NameError, and TypeError",
+    "authors": [
+        "chris-cooling"
+    ],
+    "tags": [
+        "python"
+    ],
+    "duration": 5,
+    "prerequisites": [
+        "python-print",
+        "programming-exceptions",
+        "python-variables",
+        "python-arithmetic-operators",
+        "python-strings-introduction"
+    ],
+    "related": [
+        "python-indexerror",
+        "python-keyerror",
+        "python-zerodivisionerror"
+    ]
+}
