@@ -12,14 +12,8 @@
 <py-cell>print(a)
 print("This line never runs")</py-cell>
 
-<p>You'll see an error message like:</p>
+<p>The exact error message received will vary depending on the Python environment and the context in which the Python code is running. However, there are some common components of an error message from an exception (not all of these will be present every time, and not all will be present in the error message above):</p>
 
-<pre><code>Traceback (most recent call last):
-  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
-    print(a)
-NameError: name 'a' is not defined</code></pre>
-
-<p>Breaking down this error message:</p>
 <ul>
 <li><strong>Traceback:</strong> Shows the sequence of function calls leading to the error</li>
 <li><strong>File and line number:</strong> Points to exactly where the error occurred</li>
@@ -32,7 +26,7 @@ NameError: name 'a' is not defined</code></pre>
 
 <h3>SyntaxError</h3>
 
-<p>A <code>SyntaxError</code> occurs when Python code violates the language's syntax rules. Python detects these <em>before</em> running your code:</p>
+<p>A <code>SyntaxError</code> occurs when Python code violates the language's syntax rules. Python detects these <em>before</em> executing your code:</p>
 
 <py-cell>x = 5
 y = x +</py-cell>
